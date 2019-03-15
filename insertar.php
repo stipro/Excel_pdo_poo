@@ -9,10 +9,23 @@ try
         $ejecutar = "";
     
 
-        $nuevoUsuario = $conexion -> prepare("INSERT INTO avance_vendedor (zona, vendedor, v_bruta,  n_credito, n_neta, cuota, porcentaje, t_clientes, cobertura, cobrado, t_x_cobrar, morosidad, moroso) 
+        $nuevoUsuario = $conexion -> prepare("INSERT INTO avance_vendedor (zona,
+        vendedor, 
+        v_bruta,  
+        n_credito, 
+        n_neta, 
+        cuota, 
+        porcentaje, 
+        t_clientes, 
+        cobertura, 
+        cobrado, 
+        t_x_cobrar, 
+        morosidad, 
+        moroso) 
         VALUES (
             :selection_0,
             :selection_1,
+            :selection_2,
             :selection_3,
             :selection_4,
             :selection_5,
